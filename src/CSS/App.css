@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+:root{
+  --dark-color:#1B1B1B;
+  --light-color:#F5F5F5;
+  --primary-font:'Raleway',monospace;
+  --secondary-font:'IBM Plex Mono', monospace;
+}
+
+*{
+  /* border: 1px solid red; */
+}
+
+.App {
+  /* text-align: center; */
+  font-family: var(--primary-font);
+  overflow: hidden;
+  background-color: var(--light-color);
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  background-color: var(--dark-color) !important;
+}
+.nav-link{
+  font-family: var(--secondary-font);
+  color: #9C9C9C !important;
+  margin: 0rem 3rem;
+}
+.nav-link:hover{
+  color: var(--light-color) !important;
+}
+.navbar-toggler-icon{
+  color: var(--light-color);
+}
+
+.homepage{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #080808;
+}
+.homepage h1{
+  color: var(--light-color);
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.homepage p{
+  color:#9C9C9C;
+  width: 30rem;
+}
+
+.introText{
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+}
+.photoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myphoto{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--light-color);
+  /* margin: 0rem 10rem; */
+  background: url('../assets/myphoto.jpeg');
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+}
+.custom-toggler.navbar-toggler {
+  border-color: #707070 !important;
+}
+
+
+.caseStudiesSection{
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+
+}
+.caseStudiesSection h1{
+  /* display: inline; */
+  align-self: center;
+  margin: 3rem 0rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+
+}
+.caseStudies{
+  background: var(--light-color);
+}
+.case{
+  width: fit-content;
+  margin-left: 10rem;
+  height: 20rem;
+}
+
+.case a{
+  background: #FFA217;
+  box-shadow: 0px 8px 30px rgba(42, 176, 144, 0.1);
+  border-radius: 4px;
+  padding: .5rem 1.2rem;
+  font-weight: 700;
+  color: var(--light-color) !important;
+  font-family: var(--secondary-font);
+  margin-top:1rem;
+  
+  text-decoration: none;
+}
+
+.caseImg{
+  background: url('../assets/test.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  /* width: 0rem !important; */
+  /* margin-right: 5rem; */
+}
+
+.introText button{
+  background-color: #3F8E00;
+  color:var(--light-color);
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+  width: 18rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid #62BA1B;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+}
+
+
+
+@media (max-width: 850px) {
+  .introText{
+    margin: 2rem 0rem;
+    }
+    .myphoto{
+      margin-bottom: 2rem;
+    }
+  .homepage{
+    height: fit-content;
+  }
+}
