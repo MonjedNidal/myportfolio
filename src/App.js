@@ -4,6 +4,8 @@ import "./CSS/App.css";
 import Homepage from "./components/Homepage";
 import CaseStudies from "./components/CaseStudies";
 import RecentWork from "./components/RecentWork";
+import Contact from "./components/Contact";
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +13,7 @@ function App() {
         <Homepage />
         <CaseStudies />
         <RecentWork />
+        <Contact />
       </header>
     </div>
   );

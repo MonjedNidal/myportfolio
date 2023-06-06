@@ -1,5 +1,3 @@
-import React from "react";
-
 function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">

@@ -1,6 +1,4 @@
-import React from "react";
 import MyNavbar from "./MyNavbar";
-
 function Homepage() {
   return (
     <div>

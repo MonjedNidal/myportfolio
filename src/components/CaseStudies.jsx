@@ -1,5 +1,3 @@
-import React from "react";
-
 function CaseStudies() {
   return (
     <section className="caseStudiesSection container">
