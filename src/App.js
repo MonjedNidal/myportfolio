@@ -3,13 +3,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./CSS/App.css";
 import Homepage from "./components/Homepage";
 import CaseStudies from "./components/CaseStudies";
-
+import RecentWork from "./components/RecentWork";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Homepage />
         <CaseStudies />
+        <RecentWork />
       </header>
     </div>
   );

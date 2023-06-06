@@ -20,6 +20,9 @@
 }
 
 .navbar{
+  /* position: fixed; */
+  top:0px !important;
+  /* display: block !important; */
   background-color: var(--dark-color) !important;
 }
 .nav-link{
@@ -35,7 +38,7 @@
 }
 
 .homepage{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +56,7 @@
 }
 
 .introText{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   margin-left: 7rem;
 }
@@ -86,7 +89,7 @@
 .caseStudiesSection{
   display: flex;
   flex-direction: column; 
-  height: 100vh;
+  height: fit-content;
 
 }
 .caseStudiesSection h1{
@@ -95,17 +98,21 @@
   margin: 3rem 0rem;
   font-weight: 800;
   margin-bottom: 6rem;
-
 }
 .caseStudies{
+  display: flex;
+  flex-direction: column;
   background: var(--light-color);
 }
 .case{
-  width: fit-content;
-  margin-left: 10rem;
+  display: flex;
+  align-items: center;
   height: 20rem;
+  margin-bottom: 5rem;
 }
-
+.caseText{
+  margin: 0rem 2rem;
+}
 .case a{
   background: #FFA217;
   box-shadow: 0px 8px 30px rgba(42, 176, 144, 0.1);
@@ -114,9 +121,13 @@
   font-weight: 700;
   color: var(--light-color) !important;
   font-family: var(--secondary-font);
-  margin-top:1rem;
-  
+  margin-top:2rem;
   text-decoration: none;
+  box-shadow: 0px 8px 30px rgba(42, 176, 144, 0.1);
+}
+.caseStudies .case:nth-child(2) a{
+  background-color: #000AFF !important;
+  box-shadow: 0px 8px 30px rgba(0, 10, 255, 0.1);
 }
 
 .caseImg{
@@ -124,8 +135,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
-  /* width: 0rem !important; */
-  /* margin-right: 5rem; */
+  height: 20rem;
+  margin: 0rem 2rem;
 }
 
 .introText button{
@@ -144,15 +155,58 @@
 }
 
 
+.recentWorkSection{
+  background-color: var(--dark-color);
+  height: 100vh;
+}
 
-@media (max-width: 850px) {
+.recentWorkSection h1{
+  align-self: center;
+  margin: 3rem 0rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+  color: var(--light-color);
+}
+
+
+
+@media (max-width: 930px) {
   .introText{
     margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     .myphoto{
       margin-bottom: 2rem;
     }
-  .homepage{
-    height: fit-content;
+    .homepage{
+      display: flex;
+       flex-direction: column;
+    }
+    .photoContainer{
+      display: none;
+    }
+}
+
+@media (max-width: 515px) {
+  .introText{
+    margin: 0rem 1rem;
+  }
+  .introText h1{
+    font-size: 30px !important;
+    }
+    .introText p{
+
+      font-size: 13px !important;
+      }
+}
+
+@media (max-width: 770px) {
+  .case{
+    height: 35rem !important;
+  }
+  .caseImg{
+    height: 15rem !important;
   }
 }

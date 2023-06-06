@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <div>
       <MyNavbar />
-      <div className="row container-flued homepage">
+      <div className="row homepage">
         <div className="col introText">
           <h1>Monjed Nidal Maswadeh</h1>
           <p>
