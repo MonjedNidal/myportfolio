@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import Axios from "axios";
+
+const botToken = "6291591213:AAHNS0cOMnCfPelbFjo7MHtqOGZtB4SarLE";
+const chatId = "-955365268";
 
 function ContactForm() {
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSend = () => {
+    Axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      chat_id: chatId,
+      text: `Email: ${email}\nMobile Number:${mobile}\nMessage:${message}`,
+    })
+      .then((response) => {
+        console.log("Message sent successfully:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+      });
+  };
   return (
     <form>
       <div class="mb-3">
@@ -12,6 +31,9 @@ function ContactForm() {
           class="form-control"
           id="emailInput"
           placeholder="Please enter your email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
       </div>
       <div class="mb-3">
@@ -24,6 +46,9 @@ function ContactForm() {
           type="text"
           placeholder="Enter mobile"
           pattern="[0-9]{10}"
+          onChange={(e) => {
+            setMobile(e.target.value);
+          }}
         />
       </div>
       <div class="mb-3">
@@ -35,9 +60,17 @@ function ContactForm() {
           class="form-control"
           id="messegeArea"
           rows="4"
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
         ></textarea>
       </div>
-      <a className="submitBtn" href="/">
+      <a
+        onClick={handleSend}
+        className="submitBtn"
+        id="submitBtn"
+        href="#submitBtn"
+      >
         Submit {` >`}
       </a>
     </form>

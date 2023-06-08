@@ -9,7 +9,7 @@ function RecentWork() {
         </p>
       </div>
       <div className="row container flex-column flex-lg-row">
-        <div className="col work">
+        <div className="col work" style={{ paddingRight: "1rem !important;" }}>
           <div id="firstWorkImg"></div>
           <h2>QR Generator</h2>
           <p>
