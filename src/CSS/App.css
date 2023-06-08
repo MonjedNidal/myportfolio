@@ -333,9 +333,6 @@ footer div a:hover{
   color: var(--light-color) !important;
 }
 
-.toast{
-  z-index: 20000 !important;
-}
 
 @media (max-width: 930px) {
   .introText{

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Axios from "axios";
-import MyToast from "./MyToast";
 
 const botToken = "6291591213:AAHNS0cOMnCfPelbFjo7MHtqOGZtB4SarLE";
 const chatId = "-955365268";
@@ -29,8 +28,6 @@ function ContactForm({ exposeErrorToast, cooldown, setCooldown, exposeToast }) {
   };
   return (
     <form>
-      <MyToast />
-
       <div class="mb-3">
         <label for="emailInput" class="form-label">
           Email

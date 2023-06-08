@@ -1,5 +1,3 @@
-import work2Img from "../assets/work2.png";
-
 function CaseStudies({ myElementRef }) {
   return (
     <section
