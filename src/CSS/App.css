@@ -4,7 +4,7 @@
   --main-dark-color: #080808;
   --dark-color:#1B1B1B;
   --light-color:#F5F5F5;
-  --grey-color:#9C9C9C;
+  --grey-color:#696969;
   --primary-font:'Raleway',monospace;
   --secondary-font:'IBM Plex Mono', monospace;
 }
@@ -117,7 +117,7 @@
 
 .case p{
   /* font-family: var(--secondary-font); */
-  color:var(--dark-color);
+  color:var(--grey-color);
 }
 
 .caseText{
@@ -204,6 +204,8 @@
   margin-bottom: 1rem;
 }
 .recentsHeading p{
+  color: var(--grey-color);
+  font-family: var(--secondary-font);
   text-align: center;
   width: 55vw;
 }
@@ -272,8 +274,9 @@
 }
 
 .contactSection p{
+  
   font-family: var(--secondary-font);
-  color: var(--main-dark-color);
+  color: var(--grey-color);
   margin-top: 1rem;
   text-align: center;
   width: 45vw;
@@ -294,7 +297,7 @@
   line-height: 16px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 19vh;
 }
 .formContainer input::placeholder{
   font-family: var(--secondary-font);
@@ -327,8 +330,11 @@ footer div a{
   text-decoration: none;
 }
 footer div a:hover{
-  color: var() !important;
-  
+  color: var(--light-color) !important;
+}
+
+.toast{
+  z-index: 20000 !important;
 }
 
 @media (max-width: 930px) {
@@ -371,6 +377,12 @@ footer div a:hover{
   }
   .caseImg{
     height: 15rem !important;
+  }
+  .formContainer {
+    width: 70vw;
+  }
+  .contactSection p{
+    width: 70vw;
   }
 }
 

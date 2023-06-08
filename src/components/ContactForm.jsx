@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 import Axios from "axios";
+import MyToast from "./MyToast";
 
 const botToken = "6291591213:AAHNS0cOMnCfPelbFjo7MHtqOGZtB4SarLE";
 const chatId = "-955365268";
 
-function ContactForm({ setShowToast }) {
+function ContactForm({ exposeErrorToast, cooldown, setCooldown, exposeToast }) {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
   const handleSend = () => {
+    if (cooldown) {
+      exposeErrorToast("Please Wait 30sec");
+      return;
+    }
     Axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       chat_id: chatId,
       text: `Email: ${email}\nMobile Number:${mobile}\nMessage:${message}`,
     })
       .then((response) => {
         console.log("Message sent successfully:", response.data);
-        setShowToast(true);
+        exposeToast("Messege Sent!");
+        setCooldown(true);
       })
       .catch((error) => {
         console.error("Error sending message:", error);
@@ -23,6 +29,8 @@ function ContactForm({ setShowToast }) {
   };
   return (
     <form>
+      <MyToast />
+
       <div class="mb-3">
         <label for="emailInput" class="form-label">
           Email

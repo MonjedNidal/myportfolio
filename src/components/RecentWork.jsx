@@ -4,8 +4,8 @@ function RecentWork() {
       <div className="recentsHeading">
         <h1>Recent Work</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          beatae, placeat quaerat ratione hic eum illo at nemo qui quis.
+          Here is my last things i made by react and some API's, I wish they
+          usefull and i will let you take a look for now.
         </p>
       </div>
       <div className="row container flex-column flex-lg-row">
@@ -33,7 +33,9 @@ function RecentWork() {
             with each quote. Share your favorite quotes effortlessly on Twitter
             and let inspiration guide your day.
           </p>
-          <a href="/">Know more {` >`}</a>
+          <a a href="https://github.com/MonjedNidal/QuoteOfTheDay">
+            Open in Github {` >`}
+          </a>
         </div>
       </div>
     </section>

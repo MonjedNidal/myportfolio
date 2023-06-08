@@ -40,7 +40,7 @@ function CaseStudies({ myElementRef }) {
               className="secCaseA"
               href="https://github.com/MonjedNidal/Advanced-JS-Training-Final-Project"
             >
-              View case study on github {" >"}
+              View on github {" >"}
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./CSS/App.css";
 import Homepage from "./components/Homepage";
 import CaseStudies from "./components/CaseStudies";
