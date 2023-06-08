@@ -1,6 +1,8 @@
 import ContactForm from "./ContactForm";
-import Footer from "./Footer";
+import { useState } from "react";
+import MyToast from "./MyToast";
 function Contact() {
+  const [showToast, setShowToast] = useState(false);
   return (
     <div className="contactSection" id="contact">
       <h1>Get In Touch</h1>
@@ -10,8 +12,9 @@ function Contact() {
         maiores
       </p>
       <div className="container formContainer">
-        <ContactForm />
+        <ContactForm setShowToast={setShowToast} />
       </div>
+      <MyToast />
     </div>
   );
 }

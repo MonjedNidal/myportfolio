@@ -4,7 +4,7 @@ import Axios from "axios";
 const botToken = "6291591213:AAHNS0cOMnCfPelbFjo7MHtqOGZtB4SarLE";
 const chatId = "-955365268";
 
-function ContactForm() {
+function ContactForm({ setShowToast }) {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
@@ -15,6 +15,7 @@ function ContactForm() {
     })
       .then((response) => {
         console.log("Message sent successfully:", response.data);
+        setShowToast(true);
       })
       .catch((error) => {
         console.error("Error sending message:", error);
@@ -69,7 +70,7 @@ function ContactForm() {
         onClick={handleSend}
         className="submitBtn"
         id="submitBtn"
-        href="#submitBtn"
+        href="#submitBt"
       >
         Submit {` >`}
       </a>
