@@ -1,6 +1,6 @@
 function RecentWork() {
   return (
-    <section className="recentWorkSection ">
+    <section className="recentWorkSection" id="recentWork">
       <div className="recentsHeading">
         <h1>Recent Work</h1>
         <p>

@@ -1,8 +1,8 @@
 import ContactForm from "./ContactForm";
-
+import Footer from "./Footer";
 function Contact() {
   return (
-    <div className="contactSection">
+    <div className="contactSection" id="contact">
       <h1>Get In Touch</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit

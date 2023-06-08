@@ -54,10 +54,10 @@
 .homepage p{
   color: var(--grey-color);
   width: 30rem;
+  font-family: var(--secondary-font);
 }
 
 .introText{
-  /* display: flex; */
   flex-direction: column;
   margin-left: 7rem;
 }
@@ -67,8 +67,8 @@
   align-items: center;
 }
 .myphoto{
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: 2px solid var(--light-color);
   /* margin: 0rem 10rem; */
@@ -97,7 +97,7 @@
   /* display: inline; */
   align-self: center;
   margin: 3rem 0rem;
-  font-weight: 800;
+  font-weight: 800 !important;
   margin-bottom: 6rem;
 }
 .caseStudies{
@@ -111,6 +111,14 @@
   height: 20rem;
   margin-bottom: 5rem;
 }
+.case h2{
+  font-weight: 800;
+}
+
+.case p{
+  color:var(--dark-color);
+}
+
 .caseText{
   margin: 0rem 2rem;
 }
@@ -131,14 +139,29 @@
   box-shadow: 0px 8px 30px rgba(0, 10, 255, 0.1);
 }
 
-.caseImg{
-  background: url('../assets/test.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+#firstCaseImg{
+  background: url('../assets/work2.png');
+  background-repeat:round;
+  background-size:cover;
   border-radius: 4px;
   height: 20rem;
   margin: 0rem 2rem;
 }
+
+#secCaseImg{
+  background: url('../assets/node.png');
+  background-repeat:round;
+  background-size:cover;
+  border-radius: 4px;
+  height: 20rem;
+  margin: 0rem 2rem;
+}
+
+
+.row>* {
+  padding-left: 0px !important;
+}
+
 
 .introText button{
   background-color: #3F8E00;
@@ -238,6 +261,7 @@
 }
 
 .contactSection p{
+  font-family: var(--secondary-font);
   color: var(--main-dark-color);
   margin-top: 1rem;
   text-align: center;
@@ -280,6 +304,21 @@
   padding: .8rem 0rem;
 }
 
+footer div{
+  font-family: var(--secondary-font);
+  background: var(--dark-color);
+  color:#9C9C9C;
+}
+
+footer div a{
+  color: #9C9C9C !important;
+  text-decoration: none;
+}
+footer div a:hover{
+  color: var() !important;
+  
+}
+
 @media (max-width: 930px) {
   .introText{
     margin: 2rem 0rem;
@@ -291,6 +330,7 @@
       margin-bottom: 2rem;
     }
     .homepage{
+      text-align: center;
       display: flex;
        flex-direction: column;
     }

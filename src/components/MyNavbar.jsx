@@ -24,17 +24,17 @@ function MyNavbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="#caseStudies">
                 Case Studies
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="#recentWork">
                 Recent work
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="#contact">
                 Get In Touch
               </a>
             </li>

@@ -5,16 +5,22 @@ import Homepage from "./components/Homepage";
 import CaseStudies from "./components/CaseStudies";
 import RecentWork from "./components/RecentWork";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { useRef } from "react";
 
 function App() {
+  const myElementRef = useRef(null);
+  const handleGetStarted = () => {
+    myElementRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Homepage />
-        <CaseStudies />
-        <RecentWork />
-        <Contact />
-      </header>
+      <Homepage handleGetStarted={handleGetStarted} />
+      <CaseStudies myElementRef={myElementRef} />
+      <RecentWork />
+      <Contact />
+      <Footer />
     </div>
   );
 }
