@@ -90,7 +90,7 @@
 .caseStudiesSection{
   display: flex;
   flex-direction: column; 
-  height: fit-content;
+  height: fit-content !important;
 
 }
 .caseStudiesSection h1{
@@ -116,6 +116,7 @@
 }
 
 .case p{
+  /* font-family: var(--secondary-font); */
   color:var(--dark-color);
 }
 
@@ -184,7 +185,7 @@
   flex-direction: column;
   color: var(--light-color);
   background-color: var(--main-dark-color);
-  height: fit-content;
+  /* height: 110vh !important; */
   align-items: center;
 }
 
@@ -223,6 +224,7 @@
   box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.3);
   border-radius: 4px;
   padding: .3rem .8rem;
+  margin-bottom: 2rem !important;
 }
 .work h2{
   margin-top: 2rem !important;
@@ -235,16 +237,26 @@
   color: var(--grey-color);
 }
 
-.workImg{
-  background: url('../assets/work1.svg');
+#firstWorkImg{
+  background: url('../assets/qrproject.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #000AFF; */
-  /* width: 50vh; */
+  background-position: center;
   height: 40vh;
   margin-bottom: 1rem;
   border-radius: 4px;
 }
+
+#secWorkImg{
+  background: url('../assets/quoteproject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
 
 .contactSection{
   padding-top: 5rem;
@@ -337,6 +349,7 @@ footer div a:hover{
     .photoContainer{
       display: none;
     }
+    
 }
 
 @media (max-width: 515px) {
@@ -363,6 +376,6 @@ footer div a:hover{
 
 @media (min-width: 1000px) {
   .recentWorkSection{
-    height: 100vh;
+    height: fit-content;
   }
 }

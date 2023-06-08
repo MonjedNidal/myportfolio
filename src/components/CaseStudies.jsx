@@ -28,14 +28,19 @@ function CaseStudies({ myElementRef }) {
         <div class="row case flex-column-reverse flex-md-row">
           <div id="secCaseImg" class="col caseImg"></div>
           <div class="col caseText">
-            <h2>Work name here</h2>
+            <h2>Movie Cotalog By NodeJs</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              JavaScript movie catalog manager. Users can view, add, update, and
+              delete movies. It supports searching and filtering by title,
+              director, genre, and release year. The system uses the OMDb API to
+              fetch movie data. File operations are handled with the{" "}
+              <code>fs</code> module.
             </p>
-            <a className="secCaseA" href="/">
-              View case study {" >"}
+            <a
+              className="secCaseA"
+              href="https://github.com/MonjedNidal/Advanced-JS-Training-Final-Project"
+            >
+              View case study on github {" >"}
             </a>
           </div>
         </div>
