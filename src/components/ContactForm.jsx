@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
 
+//Example bot token...(not active)
 const botToken = "6291591213:AAHNS0cOMnCfPelbFjo7MHtqOGZtB4SarLE";
 const chatId = "-955365268";
 
